@@ -2853,7 +2853,7 @@ html {
 }
 
 body {
-  background: #f0f0f0;
+  background: #fff;
   width: 100%;
   height: 100%;
 }
@@ -3127,7 +3127,6 @@ body {
   border-left: 1px solid #86abc4;
   border-right: 1px solid #86abc4;
   border-bottom: 1px solid #86abc4;
-  height: 100%;
   width: 250px;
   display: block;
   -webkit-flex-wrap: wrap;
@@ -3136,7 +3135,9 @@ body {
   text-align: center;
   padding-left: 30px;
   padding-right: 30px;
-  min-height: 260px;
+  min-height: 252px;
+  max-height: 252px;
+  overflow: hidden;
 }
 
 .slider-menu__link {
@@ -3198,6 +3199,8 @@ body {
   text-align: left;
   display: block;
   color: #084464;
+  max-height: 65px;
+  overflow: hidden;
 }
 
 .contacts {
@@ -3264,13 +3267,6 @@ body {
   text-decoration: none;
 }
 
-.test {
-  position: absolute;
-  top: 50%;
-  height: 45px;
-  background-color: #f00;
-}
-
 .menu, .main-menu, .slider-menu {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3279,6 +3275,93 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+/*************feedback****************/
+.callback-form__wrap {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+.callback-form {
+  display: block;
+}
+
+.callback-form .callback-form__text {
+  font: 30px "roboto-medium", sans-serif;
+  color: #084464;
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.callback-form__inputs-wrap {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*******************about-company***********************/
+.about-company {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-company__article {
+  margin-left: 15px;
+  padding-left: 90px;
+}
+
+.about-company__article-text {
+  font: 15px "roboto-regular", sans-serif;
+  color: #084464;
+}
+
+.about-company .leftOfContainer {
+  position: absolute;
+  left: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.about-company__article-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-company__article-list .about-company__article-item-num {
+  font: 20px "roboto-medium", sans-serif;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  background-color: #e6380b;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /******************footer**********************/
@@ -3296,6 +3379,76 @@ body {
           border-radius: 50%;
   height: 40px;
   width: 40px;
+}
+
+.input__border-radius {
+  display: block;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  border-radius: 25px;
+  border: solid 2px #92aab7;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #92aab7;
+  font: 14px "roboto-medium", sans-serif;
+}
+
+.input__border-radius::-webkit-input-placeholder {
+  color: #92aab7;
+  font: 14px "roboto-medium", sans-serif;
+}
+
+.input__border-radius::-moz-placeholder {
+  color: #92aab7;
+  font: 14px "roboto-medium", sans-serif;
+}
+
+.input__border-radius:-ms-input-placeholder {
+  color: #92aab7;
+  font: 14px "roboto-medium", sans-serif;
+}
+
+.input__border-radius::-ms-input-placeholder {
+  color: #92aab7;
+  font: 14px "roboto-medium", sans-serif;
+}
+
+.input__border-radius::placeholder {
+  color: #92aab7;
+  font: 14px "roboto-medium", sans-serif;
+}
+
+.callback-form__submit {
+  display: block;
+  background-color: #e6380b;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font: 14px "roboto-bold", sans-serif;
+  position: relative;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.callback-form__submit:focus {
+  outline: none;
+}
+
+.callback-form__submit .arrow-right {
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  top: 5px;
+  right: 5px;
+  background-image: url("../img/icons/arrow-right.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 /*==========  Desktop First  ==========*/

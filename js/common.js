@@ -1,14 +1,13 @@
 $(function() {
     $('.slider').slick({
-        infinite: false,
-        speed: 300,
-        //variableWidth: true
+        speed: 2000,
+        autoplay: true,
     });
 
     $('.slider-menu').slick({
         infinite: true,
         slidesToShow: 6,
-        slidesToScroll: 6,
+        slidesToScroll: 1,
         centerMode: true
     })
 
