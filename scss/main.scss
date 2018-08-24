@@ -386,11 +386,35 @@ body {
 /*******************about-company***********************/
 .about-company{
   display: flex;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 140px;
   &__article{
 	margin-left: 15px;
 	padding-left: 90px;
   }
   &__img-wrap{
+	height: 100%;
+	img{
+	  display: block;
+	  height: 100%;
+	  object-fit: scale-down;
+	  width: 100%;
+	}
+	h2{
+	  position: absolute;
+	  z-index: 5;
+	  top: 0;
+	  height: 150px;
+	  background-color: $accent;
+	  padding: 0;
+	  margin: 0;
+	  padding-left: 5px;
+	  color: #fff;
+	  display: flex;
+	  align-items: center;
+	  width: 48%;
+	}
   }
   &__article-text{
 	font: 15px "roboto-regular", sans-serif;
@@ -410,14 +434,124 @@ body {
 	.about-company__article-item-num{
 	  font: 20px "roboto-medium", sans-serif;
 	  color: #fff;
-	  height: 40px;
-	  width: 40px;
-	  background-color: $accent;
+	  height: 100px;
+	  width: 100px;
+	  //background-color: $accent;
 	  display: inline-flex;
 	  border-radius: 50%;
 	  justify-content: center;
 	  align-items: center;
+	  background-image: url("../img/icons/elipse_ol.png");
 	}
+  }
+}
+
+/*********************installation**************************/
+.installation{
+  margin-bottom: 70px;
+  &__header{
+	.accent__color{
+	  display: block;
+	  color: $accent;
+	}
+  }
+}
+
+.installation-item{
+  height: 300px;
+  font: 20px "roboto-medium", sans-serif;
+  text-decoration: none;
+  color: $textColorDark;
+  .round-rarrow{
+	display: none;
+  }
+  &:active, &:hover{
+	text-decoration: none;
+	color: $textColorDark;
+  }
+  &.active{
+	background-color: rgba(134,171,196,.2);
+	.installation-item__link{
+	  display: block;
+	}
+  }
+  &__image{
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+  }
+  &__text{
+	text-align: left;
+	font: 20px "roboto-medium", sans-serif;
+	height: 75px;
+	overflow: hidden;
+  }
+  &__wrapper{
+
+  }
+}
+/********main page articles***********/
+.main-page-articles{
+  .article{
+	&-wrap{
+	  display: flex;
+	}
+	&-small,&-big{
+	  //width: 41.67%;
+	  img{
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+		font-weight: bold;
+	  }
+	  p{
+		font: 14px "roboto-regular", sans-serif;
+		color: $textColorDark;
+	  }
+	}
+	&-big{
+	 // width: 58.33%;
+	}
+	&-info{
+	  font: 16px "roboto-regular", sans-serif;
+	  color: $gray;
+	  margin-bottom: 170px;
+	}
+	&__thumbnail{
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  height: 150px;
+	  width: 60%;
+	  background: $accent;
+	  display: flex;
+	  align-items: center;
+	  padding-left: 30px;
+	  font: 30px "roboto-bold", sans-serif;
+	  color: #ffffff;
+	  padding-right: 50%;
+	}
+	&__text{
+	  font: 14px "roboto-regular", sans-serif;
+	}
+  }
+  .article__picture{
+	position: relative;
+	overflow: hidden;
+	img{
+	  display: block;
+	  width: 100%;
+	  overflow: hidden;
+	  position: relative;
+	  top: 0;
+	  left: 0;
+	}
+  }
+  .main-articles-second-row{
+	margin-top: 70px;
+	margin-bottom: 140px;
   }
 }
 /******************footer**********************/
@@ -478,5 +612,35 @@ body {
 	background-repeat: no-repeat;
 	background-position: 50%;
   }
+}
+.section-header{
+  display: block;
+  text-align: center;
+  font: 40px "roboto-bold", sans-serif;
+  color: #084464;
+  margin-bottom: 40px;
+  .accent__color{
+	display: block;
+  }
+}
+.round-rarrow{
+  display: block;
+  border: 1px solid $gray;
+  border-radius: 50%;
+  background-image: url("../img/icons/arrow-right-accent.png");
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  &:active, &:hover{
+	outline: none;
+	border: 2px solid $accent;
+  }
+}
+.padding-off{
+  padding-left: 0;
+  padding-right: 0;
 }
 @import "media"; // Always at the end
