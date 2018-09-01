@@ -127,6 +127,18 @@ body {
   overflow: hidden;
   .slide{
 	height: 100vh;
+	position: relative;
+	&__header{
+	  position: absolute;
+	  top: 50%;
+	  font-size: 50px;
+	  font-family: "GothamPro", sans-serif;
+	  color: #fff;
+	  font-weight: normal;
+	  transform: translateY(-50%);
+	  width: 600px;
+	  line-height: 70px;
+	}
 	img{
 	  min-width: 100%;
 	  object-fit: cover;

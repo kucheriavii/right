@@ -36,17 +36,61 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
+
+  .main-menu__item:hover{
+	border: none;
+	margin-bottom: 0px;
+  }
+  .logo-header img{
+	height: 50px;
+  }
+  .main-menu__item{
+	height: 50px;
+  }
+  .header__top-wrapper{
+	margin-top: 10px;
+  }
+  .contacts .contacts__workdays{
+	text-align: left;
+  }
+  .contacts__phone{
+	text-align: left;
+  }
+  .contacts__callback{
+	text-align: right;
+  }
+  .header__top-wrapper-fixed .main-menu__item{
+	display: flex;
+  }
+  .slider .slide__header {
+	position: absolute;
+	top: 50%;
+	font-size: 50px;
+	font-family: "GothamPro", sans-serif;
+	color: #fff;
+	font-weight: normal;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 600px;
+	line-height: 50px;
+	font-size: 32px;
+  }
+  .contacts__callback{
+	display: block;
+  }
+  .contacts{
+	padding-bottom: 20px;
+  }
+  .main-menu__item a{
+	text-align: center;
+  }
   .header__top{
 	height: auto;
   }
-  .main-menu__item .main-menu__link{
-	text-align: center;
-  }
-  .contacts{
+  .contacts {
 	position: relative;
-  }
-  .menu-button{
-	display: block !important;
+	margin-top: 15px;
   }
   .callback-form__inputs-wrap, .question-form__inputs-wrap{
 	width: 100%;
@@ -168,8 +212,30 @@
 	align-items: center;
 	padding: 25px 0;
   }
+  .header__top-wrapper{
+	margin-top: 0px;
+  }
+  .header__top{
+	height: auto;
+  }
+  .main-menu__item .main-menu__link{
+	text-align: center;
+  }
+  .contacts{
+	position: relative;
+  }
+  .menu-button {
+	display: block !important;
+	/* margin: 0 auto; */
+	width: 40px;
+	height: 40px;
+	background: #f00;
+	position: absolute;
+	top: 20px;
+	z-index: 51;
+  }
   .header__name {
-	font-size: 40px;
+	font-size: 32px;
 	text-align: center;
 	font-family: "GothamPro", sans-serif;
 	color: #fff;
@@ -179,6 +245,57 @@
 	transform: translateY(-50%);
 	width: 100%;
 	line-height: 70px;
+  }
+  .callback-form .callback-form__text, .callback-form .question-form__text, .question-form .callback-form__text, .question-form .question-form__text{
+	width: 100%;
+  }
+  .slider .slide__header{
+	width: 90%;
+	font-size: 32px;
+  }
+  .contacts__workdays,.contacts__phone,.contacts__callback{
+	display: flex;
+	justify-content: center;
+  }
+  .header__top{
+	padding-bottom: 25px;
+  }
+  .menu, .slider-menu{
+	display: block;
+  }
+  .header__top-wrapper-fixed{
+	display: none !important;
+  }
+  .main-menu{
+	display: none;
+	background-color: rgba(0,0,0,.95);
+	height: 100vh;
+	position: relative;
+	z-index: 50;
+	.main-menu__item{
+	  height: 50px;
+	  &:first-child{
+		text-align: center;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		height: 130px;
+
+	  }
+	}
+  }
+  .slider .slide__header {
+	width: 90%;
+	font-size: 22px;
+	display: flex;
+	max-width: 60%;
+	margin: 0 auto;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+  }
+  .slider .slide__header{
+	line-height: 1.8em;
   }
 }
 

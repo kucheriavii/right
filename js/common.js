@@ -13,7 +13,7 @@ function mainPageSliders(){
     var mainSliderCount = $('.slider .slide').length;
     var slider = $('.slider').slick({
         speed: 2000,
-        autoplay: true,
+        /*autoplay: true,*/
     });
     $('.header__slider-max-slide').text(mainSliderCount);
     slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
@@ -104,4 +104,12 @@ function activeItems(){
         $('.installation-item').removeClass('active');
         $(this).addClass('active');
     });
+
+
+    /***main menu for mobile**/
+    var menuButton = '.menu-button';
+    var mobileMenu = '.main-menu';
+    $(document).on('click', menuButton, function(e){
+        $(mobileMenu).slideToggle(500);
+    })
 }
