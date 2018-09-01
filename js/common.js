@@ -3,6 +3,7 @@ $(function() {
     mainPageSliders();/*Слайдер главной страници*/
     fixedMenu(); /*Второе меню*/
     activeItems();
+    sandwich()
 
 
 
@@ -113,3 +114,15 @@ function activeItems(){
         $(mobileMenu).slideToggle(500);
     })
 }
+
+
+var sandwich = function(){ //Сендвич анимация на кнопку меню для мобильных версий
+    $(".sandwich").click(function() {
+        $(".sandwich").toggleClass("active");
+        if($(".sandwich").hasClass("active")){
+            $('.main-menu').addClass('active');
+        } else{
+            $('.main-menu').removeClass('active');
+        }
+    });
+};

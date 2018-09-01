@@ -4237,6 +4237,102 @@ body {
   display: none;
 }
 
+/******************sandwich***********************/
+/************sandwich styles*********/
+.company-info__about-company, .company-info__contacts, .company-info__office {
+  padding-left: 21px;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+}
+
+.sandwich {
+  width: 41px;
+  height: 41px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sw-topper {
+  position: relative;
+  top: 0px;
+  width: 41px;
+  height: 2px;
+  background: #fff;
+  border: none;
+  -webkit-border-radius: 4px 4px 4px 4px;
+          border-radius: 4px 4px 4px 4px;
+  -webkit-transition: top 0.2s, -webkit-transform 0.5s;
+  transition: top 0.2s, -webkit-transform 0.5s;
+  -o-transition: transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
+  /* transition-delay: 0.2s, 0s; */
+}
+
+.sw-bottom {
+  position: relative;
+  width: 41px;
+  height: 2px;
+  top: 18px;
+  background: #fff;
+  border: none;
+  -webkit-border-radius: 4px 4px 4px 4px;
+          border-radius: 4px 4px 4px 4px;
+  -webkit-transition: top 0.2s, -webkit-transform 0.5s;
+  transition: top 0.2s, -webkit-transform 0.5s;
+  -o-transition: transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
+  -webkit-transition-delay: 0.2s, 0s;
+       -o-transition-delay: 0.2s, 0s;
+          transition-delay: 0.2s, 0s;
+}
+
+.sw-footer {
+  position: relative;
+  width: 41px;
+  height: 2px;
+  top: 36px;
+  background: #fff;
+  border: none;
+  -webkit-border-radius: 4px 4px 4px 4px;
+          border-radius: 4px 4px 4px 4px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.sandwich.active .sw-topper {
+  top: 20px;
+  -webkit-transform: rotate(140deg);
+      -ms-transform: rotate(140deg);
+          transform: rotate(140deg);
+}
+
+.sandwich.active .sw-bottom {
+  top: 17px;
+  -webkit-transform: rotate(-140deg);
+      -ms-transform: rotate(-140deg);
+          transform: rotate(-140deg);
+}
+
+.sandwich.active .sw-footer {
+  opacity: 0;
+  top: 0;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
   .main-menu__item {
@@ -4484,7 +4580,6 @@ body {
     /* margin: 0 auto; */
     width: 40px;
     height: 40px;
-    background: #f00;
     position: absolute;
     top: 20px;
     z-index: 51;
