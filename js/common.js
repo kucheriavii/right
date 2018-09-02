@@ -2,9 +2,9 @@ $(function() {
 
     mainPageSliders();/*Слайдер главной страници*/
     fixedMenu(); /*Второе меню*/
-    activeItems();
-    sandwich()
-
+    activeItems(); /*документы с классом актив*/
+    sandwich() /*кнопка для меню мобильной версии*/
+    bigMenuAccordeon();
 
 
 
@@ -114,8 +114,6 @@ function activeItems(){
         $(mobileMenu).slideToggle(500);
     })
 }
-
-
 var sandwich = function(){ //Сендвич анимация на кнопку меню для мобильных версий
     $(".sandwich").click(function() {
         $(".sandwich").toggleClass("active");
@@ -125,4 +123,14 @@ var sandwich = function(){ //Сендвич анимация на кнопку �
             $('.main-menu').removeClass('active');
         }
     });
+};
+var bigMenuAccordeon = function(){
+    var button = ".big-menu__subitem .arrow";
+    var subitem = ".big-menu__subitem";
+    var item = ".big-menu__item";
+
+    $(document).on('click', button, function(e){
+        e.preventDefault();
+        $(this).parents('.big-menu__item-link').next().slideToggle();
+    })
 };
