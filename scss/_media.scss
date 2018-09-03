@@ -387,6 +387,38 @@
 	  background-color: #000;
 	}
   }
+  .mobile-show-category-nav-bar{
+	height: 30px;
+	width: auto;
+	display: flex;
+	position: relative;
+	align-items: center;
+	margin-left: 20px;
+	color: $textColorDark;
+	font-size: 14px;
+	font-weight: bold;
+	&:after{
+	  content: '';
+	  display: inline-block;
+	  background-image: url("../img/icons/arrow-down-red.png");
+	  transition: all .5s;
+	  width: 24px;
+	  height: 24px;
+	  margin-left: 20px;
+	  background-size: contain;
+	}
+	&.active:after{
+	  content: '';
+	  display: inline-block;
+	  background-image: url("../img/icons/arrow-down-red.png");
+	  transition: all .5s;
+	  transform: rotate(180deg);
+	  width: 24px;
+	  height: 24px;
+	  margin-left: 20px;
+	  background-size: contain;
+	}
+  }
 }
 
 // ≥576px
@@ -434,6 +466,15 @@
   }
   .news--catalog__img{
 	width: 100%;
+  }
+  .category-item__img-link {
+	width: 33%;
+	width: 215px;
+	height: 320px;
+	display: block;
+	width: 90%;
+	overflow: hidden;
+	margin: 0 auto;
   }
 }
 

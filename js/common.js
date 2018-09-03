@@ -113,6 +113,20 @@ function activeItems(){
     $(document).on('click', menuButton, function(e){
         $(mobileMenu).slideToggle(500);
     })
+
+    /***catalog menu for mobile***/
+    var mobileNavBar = ".mobile-show-category-nav-bar";
+    $(document).on('click', mobileNavBar, function(e){
+        if($(this).hasClass('active') && userMethods.isMobile(769)){
+            $(this).removeClass('active');
+            $('.nav-bar__menu').slideUp(300);
+            $(this).text('Показать меню');
+        } else {
+            $(this).addClass('active');
+            $('.nav-bar__menu').slideDown(300);
+            $(this).text('Скрыть меню');
+        }
+    })
 }
 var sandwich = function(){ //Сендвич анимация на кнопку меню для мобильных версий
     $(".sandwich").click(function() {
@@ -134,3 +148,17 @@ var bigMenuAccordeon = function(){
         $(this).parents('.big-menu__item-link').next().slideToggle();
     })
 };
+
+
+
+var userMethods = {
+    isMobile: function (size) {
+        if ($(window).width() < size) {
+            // console.log($(window).width())
+            return true;
+        } else {
+            return false;
+            //console.log($(window).width())
+        }
+    }
+}
