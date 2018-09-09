@@ -4362,7 +4362,6 @@ body {
   left: -webkit-calc(100% + 10px);
   left: calc(100% + 10px);
   z-index: 999;
-  height: 48px;
   padding: 11px;
   display: -webkit-box;
   display: -webkit-flex;

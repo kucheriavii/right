@@ -218,12 +218,12 @@ function filterInputs(){
     var input = ".nav-bar__block-wrap input";
     var button = ".nav-bar__search-btn";
 
-    $(document).on('focus', input, function(e){
-        $(this).parents('.nav-bar__block-wrap').find('.nav-bar__search-btn').css('display', 'flex')
-    });
     $(document).on('blur', input, function(e){
         $(this).parents('.nav-bar__block-wrap').find('.nav-bar__search-btn').fadeOut(300)
     })
+    $(document).on('focus', input, function(e){
+        $(this).parents('.nav-bar__block-wrap').find('.nav-bar__search-btn').fadeIn(300)
+    });
 }
 function filterTable(){
     var table = ".views-table";
