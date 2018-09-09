@@ -10,6 +10,9 @@ $(function() {
     filterInputs(); /*нстройка инпутов в фильтре*/
     filterTable();/*скрывает лишнии строки в таблице описания товара и делает гармошку*/
 
+
+
+
 });
 function mainPageSliders(){
     var mainSliderCount = $('.slider .slide').length;
@@ -177,6 +180,13 @@ function sortItemsCatalog(){
     $(document).on('click', catalogBurgerLink, function(){
         $(catalogBurgerLink).removeClass('active');
         $(this).addClass('active');
+        if($(this).hasClass('catalog-filter__sort-horisontal')){
+            $('.category-item-big-wrap--vertical').removeClass('active');
+            $('.category-item-big-wrap--horizontal').addClass('active')
+        } else if($(this).hasClass('catalog-filter__sort-vertical')){
+            $('.category-item-big-wrap--horizontal').removeClass('active');
+            $('.category-item-big-wrap--vertical').addClass('active')
+        }
     });
 }
 function filterInputs(){
@@ -203,6 +213,17 @@ function filterInputs(){
             $(this).parents('label').removeClass('active');
         }
     });
+
+
+    var input = ".nav-bar__block-wrap input";
+    var button = ".nav-bar__search-btn";
+
+    $(document).on('focus', input, function(e){
+        $(this).parents('.nav-bar__block-wrap').find('.nav-bar__search-btn').css('display', 'flex')
+    });
+    $(document).on('blur', input, function(e){
+        $(this).parents('.nav-bar__block-wrap').find('.nav-bar__search-btn').fadeOut(300)
+    })
 }
 function filterTable(){
     var table = ".views-table";
