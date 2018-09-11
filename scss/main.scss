@@ -627,6 +627,7 @@ body {
   }
 }
 
+
 /**********************brand************************/
 .brands__slider-panel{
   .brands-header-text{
@@ -639,6 +640,7 @@ body {
   background-color: #ebf1fa;
   padding-top: 95px;
   padding-bottom: 95px;
+  margin-top: 145px;
   .brends-panel{
 	display: flex;
 	width: 100px;
@@ -662,6 +664,17 @@ body {
   }
   .round-rarrow:hover{
 	background-image: url("../img/icons/right-red--arrow.png");
+  }
+
+  .brands__list{
+	.brands__item{
+	  width: 246px;
+	}
+	.brand__img img{
+	  height: 150px;
+	  object-fit: contain;
+	  width: 100%;
+	}
   }
 }
 .brands__list{
@@ -690,6 +703,22 @@ body {
   outline: none;
   &:active, &:hover{
 	text-decoration: none;
+  }
+  &__description-text{
+	color: $textColorDark;
+	p{
+	  font-size: 16px;
+	  margin-bottom: 20px;
+	}
+	h3{
+	  font-size: 20px;
+	  margin-bottom: 20px;
+	}
+  }
+}
+.brand__list-wrap{
+  .list-red__item{
+	margin-bottom: 35px;
   }
 }
 
@@ -1475,6 +1504,10 @@ body {
 .news-list-wrap{
   margin-bottom: 40px;
 }
+
+.brand-wrap{
+  margin-bottom: 130px;
+}
 /******************footer**********************/
 .footer{
   height: 170px;
@@ -1822,6 +1855,41 @@ body {
 	.big-menu__description{
 	  margin-left: 60px;
 	}
+  }
+}
+.list-red{
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+  &__item{
+	display: flex;
+	align-items: center;
+	width: 300px;
+  }
+  &__item-num{
+	font: 20px "roboto-medium", sans-serif;
+	color: #fff;
+	height: 100px;
+	min-width: 100px;
+	display: inline-flex;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../img/icons/elipse_ol.png);
+	/* margin-right: 15px; */
+	text-align: center;
+	justify-content: center;
+	margin: 0;
+	background-position: center;
+  }
+  &__item-text{
+	font: 18px "roboto-regular", sans-serif;
+	color: $textColorDark;
+	margin-left: 30px;
   }
 }
 /******************sandwich***********************/

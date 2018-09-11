@@ -3660,6 +3660,7 @@ body {
   background-color: #ebf1fa;
   padding-top: 95px;
   padding-bottom: 95px;
+  margin-top: 145px;
 }
 
 .brands .brends-panel {
@@ -3696,6 +3697,17 @@ body {
 
 .brands .round-rarrow:hover {
   background-image: url("../img/icons/right-red--arrow.png");
+}
+
+.brands .brands__list .brands__item {
+  width: 246px;
+}
+
+.brands .brands__list .brand__img img {
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
 }
 
 .brands__list {
@@ -3749,6 +3761,24 @@ body {
 
 .brand:active, .brand:hover {
   text-decoration: none;
+}
+
+.brand__description-text {
+  color: #084464;
+}
+
+.brand__description-text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.brand__description-text h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.brand__list-wrap .list-red__item {
+  margin-bottom: 35px;
 }
 
 /*********************installation**************************/
@@ -4791,6 +4821,10 @@ body {
   margin-bottom: 40px;
 }
 
+.brand-wrap {
+  margin-bottom: 130px;
+}
+
 /******************footer**********************/
 .footer {
   height: 170px;
@@ -5281,6 +5315,61 @@ body {
 
 .big-menu.large-menu .big-menu__description {
   margin-left: 60px;
+}
+
+.list-red {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.list-red__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+}
+
+.list-red__item-num {
+  font: 20px "roboto-medium", sans-serif;
+  color: #fff;
+  height: 100px;
+  min-width: 100px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/icons/elipse_ol.png);
+  /* margin-right: 15px; */
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  background-position: center;
+}
+
+.list-red__item-text {
+  font: 18px "roboto-regular", sans-serif;
+  color: #084464;
+  margin-left: 30px;
 }
 
 /******************sandwich***********************/
