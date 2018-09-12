@@ -670,6 +670,12 @@ body {
 	.brands__item{
 	  width: 246px;
 	}
+	.brand__img{
+	  margin-top: 25px;
+	  margin-bottom: 30px;
+	  margin-left: 30px;
+	  margin-right: 30px;
+	}
 	.brand__img img{
 	  height: 150px;
 	  object-fit: contain;
@@ -706,6 +712,7 @@ body {
   }
   &__description-text{
 	color: $textColorDark;
+	margin-left: -60px;
 	p{
 	  font-size: 16px;
 	  margin-bottom: 20px;
@@ -719,6 +726,25 @@ body {
 .brand__list-wrap{
   .list-red__item{
 	margin-bottom: 35px;
+  }
+}
+.brands-page{
+  .brands__item{
+	cursor: pointer;
+	&:hover{
+	  background: #fff;
+	}
+  }
+  .row{
+	margin-right: -100%;
+  }
+  .slick-slide{
+	width: 255px !important;
+  }
+  .brand__name{
+	font-size: 18px;
+	padding-left: 10px;
+	padding-right: 10px;
   }
 }
 

@@ -197,6 +197,27 @@
   .company-news .company-news__main-news .company-news__main-news-header{
 	right: 0;
   }
+  .brand__list-img{
+	display: flex;
+	align-items: center;
+	.brand__img{
+	  margin: 0 auto;
+	}
+  }
+  .brand__list-img .brand__img{
+	width: 100%;
+	object-fit: contain;
+  }
+  .brand__description-text{
+	width: 100%;
+	margin: 0;
+  }
+  .brands-page .row {
+	margin-right: 0;
+  }
+  .brands-page .slick-slide{
+	width:240px !important;
+  }
   .company-news .company-news__main-news{
 	margin-bottom: 50px;
   }
