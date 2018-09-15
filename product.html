@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header header--blue">
+			<!--Главное меню-->
+			<div class="header__top-wrapper">
+					<div class="container">
+						<div class="header__top">
+							<div class="row">
+								<div class="col-lg-10 col-md-12">
+									<ul class="main-menu main-menu--blue">
+										<li class="main-menu__item">
+											<a href="#" class="logo-header"><img src="img/icons/logo_big.png" alt="logo"></a>
+										</li>
+										<li class="main-menu__item">
+											<a href="#" class="main-menu__link">Каталог</a>
+										</li>
+										<li class="main-menu__item">
+											<a href="#" class="main-menu__link">Монтаж</a>
+										</li>
+										<li class="main-menu__item">
+											<a href="#" class="main-menu__link">Производство</a>
+										</li>
+										<li class="main-menu__item">
+											<a href="#" class="main-menu__link">Портфолио</a>
+										</li>
+										<li class="main-menu__item">
+											<a href="#" class="main-menu__link">Новости</a>
+										</li>
+										<li class="main-menu__item">
+											<a href="#" class="main-menu__link">О компании</a>
+										</li>
+										<li class="main-menu__item">
+											<a href="#" class="main-menu__link">Контакты</a>
+										</li>
+									</ul>
+									<a href="#" class="menu-button">
+										<div class="sandwich">
+											<div class="sw-topper"></div>
+											<div class="sw-bottom"></div>
+											<div class="sw-footer"></div>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-2 col-md-12">
+									<div class="contacts contacts--blue">
+										<div class="contacts__workdays">
+											<span>Пн - Пт: 9<sup>00</sup>-18<sup>00</sup></span>
+											<a href="#" class="contacts__search"></a>
+										</div>
+										<div class="contacts__phone">
+											<span>+ 7 (495) 134 24 36</span>
+										</div>
+										<a href="#" class="contacts__callback">
+											<i class="phone-icon"></i>
+											<span class="contacts__callback-link">Обратный звонок</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="header__top-wrapper-fixed header__top-wrapper-fixed-blue" style="display: none">
+					<div class="container">
+						<div class="header__top">
+							<div class="row">
+								<div class="col-xl-10 col-lg-9">
+									<ul class="main-menu">
+										<li class="main-menu__item">
+											<a href="#" class="logo-header"><img src="img/icons/icons_logo_small.png" alt="logo"></a>
+										</li>
+										<li class="main-menu__item">
+											<a href="#" class="main-menu__link">Каталог</a>
+										</li>
+										<li class="main-menu__item">
+											<a href="#" class="main-menu__link">Монтаж</a>
+										</li>
+										<li class="main-menu__item">
+											<a href="#" class="main-menu__link">Производство</a>
+										</li>
+										<li class="main-menu__item">
+											<a href="#" class="main-menu__link">Портфолио</a>
+										</li>
+										<li class="main-menu__item">
+											<a href="#" class="main-menu__link">Новости</a>
+										</li>
+										<li class="main-menu__item">
+											<a href="#" class="main-menu__link">О компании</a>
+										</li>
+										<li class="main-menu__item">
+											<a href="#" class="main-menu__link">Контакты</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-xl-2 col-lg-3">
+									<div class="contacts">
+										<div class="contacts__phone">
+											<span>+ 7 (495) 134 24 36</span>
+										</div>
+										<a href="#" class="contacts__callback">
+											<i class="phone-icon"></i>
+											<span class="contacts__callback-link">Обратный звонок</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="header__top-find">
+							<img src="img/icons/search-blue-icon.png" alt="search">
+						</a>
+					</div>
+				</div>
+		</header>
+
+		<!--хлебные крошки-->
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<ul class="breadcrumbs">
+						<li class="breadcrumbs-item"><a class="breadcrumbs-item__link" href="#">Test</a></li>
+						<li class="breadcrumbs-item"><a class="breadcrumbs-item__link" href="#">Test</a></li>
+						<li class="breadcrumbs-item"><a class="breadcrumbs-item__link" href="#">Каталог</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--Название страницы-->
+
+		<!--страница товара-->
+		<div class="product__wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-12">
+						<div class="product-image__wrap">
+							<div class="product-image">
+								<img src="img/item_product.png" alt="product">
+							</div>
+							<div class="product-slider__wrap">
+								<div class="product-slider">
+									<div class="product-slider__item">
+										<a href="#" class="product-slider__link">
+											<img src="img/product-slider-item-1.png" alt="" class="product-slider__img">
+										</a>
+									</div>
+									<div class="product-slider__item">
+										<a href="#" class="product-slider__link">
+											<img src="img/product-slider-item-2.png" alt="" class="product-slider__img">
+										</a>
+									</div>
+									<div class="product-slider__item">
+										<a href="#" class="product-slider__link">
+											<img src="img/product-slider-item-2.png" alt="" class="product-slider__img">
+										</a>
+									</div>
+									<div class="product-slider__item">
+										<a href="#" class="product-slider__link">
+											<img src="img/product-slider-item-2.png" alt="" class="product-slider__img">
+										</a>
+									</div>
+									<div class="product-slider__item">
+										<a href="#" class="product-slider__link">
+											<img src="img/product-slider-item-2.png" alt="" class="product-slider__img">
+										</a>
+									</div>
+								</div>
+								<div class="slider-menu__panel-wrap">
+									<div class="slider-menu__panel">
+										<a href="#" class=" installation-item__link round-larrow redFill"></a>
+										<a href="#" class=" installation-item__link round-rarrow redFill"></a>
+									</div>
+								</div>
+							</div>
+							<button class="question-form__submit input__border-radius question-form__leave-message">Оставить заявку <span class="arrow-right"></span></button>
+						</div>
+					</div>
+					<div class="offset-lg-1 col-lg-7 col-md-12">
+						<article class="product__article">
+							<h1 class="product__name">Коллектор из нержавеющей стали с межосевым расстоянием выходов 100 мм</h1>
+
+							<p>(VTc.510.SS) Коллектор из нержавеющей стали с увеличенным до 100 мм шагом отводящих патрубков. Предназначен для групповой установки квартирных водосчетчиков в этажных узлах учета многоквартирных зданий.</p>
+							<p>	Резьба отводящих патрубков – наружная, 1/2 или 3/4". Резьба коллектора – внутренняя, 1 или 1 1/2". В комплект входит резьбовая пробка для коллектора. Коллекторы рассчитаны на рабочее давление 10 бар и максимальную температуру рабочей среды 130 °С. Средний полный срок службы изделия – 50 лет. (VTc.510.SS) Коллектор из нержавеющей стали с увеличенным до 100 мм шагом отводящих патрубков. Предназначен для групповой установки квартирных водосчетчиков в этажных узлах учета многоквартирных зданий.</p>
+							<p>	Резьба отводящих патрубков – наружная, 1/2 или 3/4". Резьба коллектора – внутренняя, 1 или 1 1/2". В комплект входит резьбовая пробка для коллектора. Коллекторы рассчитаны на рабочее давление 10 бар и максимальную температуру рабочей среды 130 °С.</p>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Документация-->
+
+		<div class="documentation">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<h3>Виды</h3>
+						<table class="documentation-table">
+							<tr>
+								<td class="documentation-table__name-head">Артикул</td>
+								<td class="documentation-table__size-head">Размер / количество</td>
+							</tr>
+							<tr>
+								<td class="documentation-table__name">VTc.510.SS.060403</td>
+								<td class="documentation-table__size">1", 4 x 1/2"</td>
+							</tr>
+							<tr>
+								<td class="documentation-table__name">VTc.510.SS.060403</td>
+								<td class="documentation-table__size">1", 4 x 1/2"</td>
+							</tr>
+							<tr>
+								<td class="documentation-table__name">VTc.510.SS.060403</td>
+								<td class="documentation-table__size">1", 4 x 1/2"</td>
+							</tr>
+							<tr>
+								<td class="documentation-table__name">VTc.510.SS.060403</td>
+								<td class="documentation-table__size">1/2", 6 x 3/4"</td>
+							</tr>
+							<tr>
+								<td class="documentation-table__name">VTc.510.SS.060403</td>
+								<td class="documentation-table__size">1/2", 6 x 3/4"</td>
+							</tr>
+							<tr>
+								<td class="documentation-table__name">VTc.510.SS.060403</td>
+								<td class="documentation-table__size">1/2", 6 x 3/4"</td>
+							</tr>
+							<tr>
+								<td class="documentation-table__name">VTc.510.SS.060403</td>
+								<td class="documentation-table__size">1/2", 6 x 3/4"</td>
+							</tr>
+							<tr>
+								<td class="documentation-table__name">VTc.510.SS.060403</td>
+								<td class="documentation-table__size">1/2", 6 x 3/4"</td>
+							</tr>
+							<tr>
+								<td class="documentation-table__name">VTc.510.SS.060403</td>
+								<td class="documentation-table__size">1/2", 6 x 3/4"</td>
+							</tr>
+							<tr>
+								<td class="documentation-table__name">VTc.510.SS.060403</td>
+								<td class="documentation-table__size">1/2", 6 x 3/4"</td>
+							</tr>
+						</table>
+					</div>
+					<div class="offset-lg-1 col-md-6">
+						<h3>Документация</h3>
+						<ul class="documentation-list">
+							<li class="documentation-item">
+								<a href="#" class="documentation-item__link">
+									<img src="img/icons/pdf-icon.png" alt="" class="documentation-item__img">
+									<span class="documentation-item__text">Паспорт: Коллекторы из нержавеющей стали (PDF, 403 KБ)</span>
+								</a>
+							</li>
+							<li class="documentation-item">
+								<a href="#" class="documentation-item__link">
+									<img src="img/icons/zip-icon.png" alt="" class="documentation-item__img">
+									<span class="documentation-item__text">Паспорт: Коллекторы из нержавеющей стали (PDF, 403 KБ)</span>
+								</a>
+							</li>
+							<li class="documentation-item">
+								<a href="#" class="documentation-item__link">
+									<img src="img/icons/zip-icon.png" alt="" class="documentation-item__img">
+									<span class="documentation-item__text">Паспорт: Коллекторы из нержавеющей стали (PDF, 403 KБ)</span>
+								</a>
+							</li>
+							<li class="documentation-item">
+								<a href="#" class="documentation-item__link">
+									<img src="img/icons/zip-icon.png" alt="" class="documentation-item__img">
+									<span class="documentation-item__text">Паспорт: Коллекторы из нержавеющей стали (PDF, 403 KБ)</span>
+								</a>
+							</li>
+							<li class="documentation-item">
+								<a href="#" class="documentation-item__link">
+									<img src="img/icons/zip-icon.png" alt="" class="documentation-item__img">
+									<span class="documentation-item__text">Паспорт: Коллекторы из нержавеющей стали (PDF, 403 KБ)</span>
+								</a>
+							</li>
+							<li class="documentation-item">
+								<a href="#" class="documentation-item__link">
+									<img src="img/icons/zip-icon.png" alt="" class="documentation-item__img">
+									<span class="documentation-item__text">Паспорт: Коллекторы из нержавеющей стали (PDF, 403 KБ)</span>
+								</a>
+							</li>
+							<li class="documentation-item">
+								<a href="#" class="documentation-item__link">
+									<img src="img/icons/zip-icon.png" alt="" class="documentation-item__img">
+									<span class="documentation-item__text">Паспорт: Коллекторы из нержавеющей стали (PDF, 403 KБ)</span>
+								</a>
+							</li>
+							<li class="documentation-item">
+								<a href="#" class="documentation-item__link">
+									<img src="img/icons/zip-icon.png" alt="" class="documentation-item__img">
+									<span class="documentation-item__text">Паспорт: Коллекторы из нержавеющей стали (PDF, 403 KБ)</span>
+								</a>
+							</li>
+							<li class="documentation-item">
+								<a href="#" class="documentation-item__link">
+									<img src="img/icons/zip-icon.png" alt="" class="documentation-item__img">
+									<span class="documentation-item__text">Паспорт: Коллекторы из нержавеющей стали (PDF, 403 KБ)</span>
+								</a>
+							</li>
+							<li class="documentation-item">
+								<a href="#" class="documentation-item__link">
+									<img src="img/icons/pdf-icon.png" alt="" class="documentation-item__img">
+									<span class="documentation-item__text">Паспорт: Коллекторы из нержавеющей стали (PDF, 403 KБ)</span>
+								</a>
+							</li>
+							<li class="documentation-item">
+								<a href="#" class="documentation-item__link">
+									<img src="img/icons/pdf-icon.png" alt="" class="documentation-item__img">
+									<span class="documentation-item__text">Паспорт: Коллекторы из нержавеющей стали (PDF, 403 KБ)</span>
+								</a>
+							</li>
+							<li class="documentation-item">
+								<a href="#" class="documentation-item__link">
+									<img src="img/icons/pdf-icon.png" alt="" class="documentation-item__img">
+									<span class="documentation-item__text">Паспорт: Коллекторы из нержавеющей стали (PDF, 403 KБ)</span>
+								</a>
+							</li>
+							<li class="documentation-item">
+								<a href="#" class="documentation-item__link">
+									<img src="img/icons/pdf-icon.png" alt="" class="documentation-item__img">
+									<span class="documentation-item__text">Паспорт: Коллекторы из нержавеющей стали (PDF, 403 KБ)</span>
+								</a>
+							</li>
+							<li class="documentation-item">
+								<a href="#" class="documentation-item__link">
+									<img src="img/icons/pdf-icon.png" alt="" class="documentation-item__img">
+									<span class="documentation-item__text">Паспорт: Коллекторы из нержавеющей стали (PDF, 403 KБ)</span>
+								</a>
+							</li>
+							<li class="documentation-item">
+								<a href="#" class="documentation-item__link">
+									<img src="img/icons/pdf-icon.png" alt="" class="documentation-item__img">
+									<span class="documentation-item__text">Паспорт: Коллекторы из нержавеющей стали (PDF, 403 KБ)</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--Примеры использования-->
+		<div class="brands brands-page documentation-page">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 col-12">
+						<div class="brands__slider-panel">
+							<h3 class="brands-header-text">Примеры использования</h3>
+							<div class="brends-panel">
+								<a href="#" class="round-larrow redFill"></a>
+								<a href="#" class="round-rarrow redFill"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-10 col-12">
+						<ul class="brands__list">
+							<li class="brands__item">
+								<a href="" class="brand">
+									<div class="brand__img">
+										<img src="img/document-pic-1.png" alt="">
+									</div>
+									<h5 class="doc__name">Внешнее электроснабжение по объекту уничтожения химического оружия в Оричевском районе Кировской области. Генподрядчик ООО «Фактор ЛТД» г.Москва. Кировская область.</h5>
+								</a>
+							</li>
+							<li class="brands__item">
+								<a href="" class="brand">
+									<div class="brand__img">
+										<img src="img/document-pic-2.png" alt="">
+									</div>
+									<h5 class="doc__name">Строительство ВЛ 110кВ Вой Вож, Помоздино (30,3 км). Заказчик – ОАО «АЭК “Комиэнерго”. Республика Коми.</h5>
+								</a>
+							</li>
+							<li class="brands__item">
+								<a href="" class="brand">
+									<div class="brand__img">
+										<img src="img/document-pic-1.png" alt="">
+									</div>
+									<h5 class="doc__name">Строительство ВЛ 110кВ Вой Вож, Помоздино (30,3 км). Заказчик – ОАО «АЭК “Комиэнерго”. Республика Коми.</h5>
+								</a>
+							</li>
+							<li class="brands__item">
+								<a href="" class="brand">
+									<div class="brand__img">
+										<img src="img/document-pic-2.png" alt="">
+									</div>
+									<h5 class="doc__name">Трубы и фитинги для отопления и  водоснабжения</h5>
+								</a>
+							</li>
+							<li class="brands__item">
+								<a href="" class="brand">
+									<div class="brand__img">
+										<img src="img/document-pic-1.png" alt="">
+									</div>
+									<h5 class="doc__name">Насосное оборудование</h5>
+								</a>
+							</li>
+							<li class="brands__item">
+								<a href="" class="brand">
+									<div class="brand__img">
+										<img src="img/document-pic-2.png" alt="">
+									</div>
+									<h5 class="doc__name">Трубы и фитинги для отопления и  водоснабжения</h5>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Question wrap-->
+		<div class="question-form__wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12">
+						<form class="question-form">
+							<h2 class="question-form__text">Есть вопросы?<br>
+								Заполните заявку и мы вам ответим!</h2>
+							<div class="question-form__inputs-wrap question-form__inputs-wrap--large">
+								<div class="question-form__inputs-wrap--left">
+									<input type="text" name="user_name" class="input__border-radius" placeholder="Имя">
+									<input type="text" name="user_email" class="input__border-radius" placeholder="E-mail">
+									<input type="text" name="phone" class="input__border-radius" placeholder="Телефон">
+								</div>
+								<div class="question-form__inputs-wrap--right">
+									<textarea name="textarea1" rows="3" class="input__border-radius" placeholder="Вопрос:"></textarea>
+									<button class="question-form__submit input__border-radius popup-leave-message">Задать вопрос <span class="arrow-right"></span></button>
+								</div>
+
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--News list-->
+
+		<div class="container">
+			<div class="news-list-wrap">
+				<div class="row">
+					<div class="col-12">
+						<div class="news--catalog-list">
+							<a href="#" class="news--catalog">
+								<div class="news--catalog__img">
+									<img src="img/article-img.jpg" alt="article">
+								</div>
+								<div class="news--catalog__info">
+									<h3 class="news--catalog__name">Налажен выпуск стальных квадратных труб</h3>
+									<span class="news--catalog__date">22.05.2018</span>
+								</div>
+							</a>
+							<a href="#" class="news--catalog">
+								<div class="news--catalog__img">
+									<img src="img/article-img.jpg" alt="article">
+								</div>
+								<div class="news--catalog__info">
+									<h3 class="news--catalog__name">Налажен выпуск стальных квадратных труб</h3>
+									<span class="news--catalog__date">22.05.2018</span>
+								</div>
+							</a>
+							<a href="#" class="news--catalog">
+								<div class="news--catalog__img">
+									<img src="img/article-img.jpg" alt="article">
+								</div>
+								<div class="news--catalog__info">
+									<h3 class="news--catalog__name">Налажен выпуск стальных квадратных труб</h3>
+									<span class="news--catalog__date">22.05.2018</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="empty-fix"></div> <!--Заглушка, щоб не видазив на футер -->
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-2 col-md-12 col-xs-12">
+					<div class="footer-logo">
+						<img src="img/logo.png" alt="logo">
+					</div>
+				</div>
+				<div class="col-lg-7 hidden-md">
+					<ul class="footer-menu">
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Каталог</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Монтаж</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Производство</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Портфолио</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Новости</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-12 col-xs-12">
+					<span class="footer__social-networks-header">Мы в соцсетях:</span>
+					<ul class="footer__social-networks">
+						<li class="footer__social-item redFill">
+							<a href="#" class="footer__social-link facebook"></a>
+						</li>
+						<li class="footer__social-item redFill">
+							<a href="#" class="footer__social-link vk"></a>
+						</li>
+						<li class="footer__social-item redFill">
+							<a href="#" class="footer__social-link twitter"></a>
+						</li>
+						<li class="footer__social-item redFill">
+							<a href="#" class="footer__social-link instagram"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="popup-wrapper">
+		<div class="popup-submit popup">
+			<div class="question-form__wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12">
+							<form class="question-form">
+								<h2 class="question-form__text">Есть вопросы?<br>
+									Заполните заявку и мы вам ответим!</h2>
+								<div class="question-form__inputs-wrap question-form__inputs-wrap--large">
+									<div class="question-form__inputs-wrap--left">
+										<input type="text" name="user_name" class="input__border-radius" placeholder="Имя">
+										<input type="text" name="user_email" class="input__border-radius" placeholder="E-mail">
+										<input type="text" name="phone" class="input__border-radius" placeholder="Телефон">
+									</div>
+									<div class="question-form__inputs-wrap--right">
+										<textarea name="textarea1" rows="3" class="input__border-radius" placeholder="Вопрос:"></textarea>
+										<button class="question-form__submit input__border-radius">Задать вопрос <span class="arrow-right"></span></button>
+									</div>
+								</div>
+								<a href="#" class="question-form__close"></a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup-submit-accept popup">
+			<div class="question-form__wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12">
+							<h2 class="question-form__text">Ваша заявка успешно
+								отправлена</h2>
+							<img src="img/icons/check-acepted.png" alt="">
+						</div>
+					</div>
+					<a href="#" class="question-form__close"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

@@ -747,6 +747,25 @@ body {
 	padding-right: 10px;
   }
 }
+.documentation-page{
+  .documentation__item{
+	cursor: pointer;
+	&:hover{
+	  background: #fff;
+	}
+  }
+  .row{
+	margin-right: -100%;
+  }
+  .slick-slide{
+	width: 255px !important;
+  }
+  .documentation__name{
+	font-size: 18px;
+	padding-left: 10px;
+	padding-right: 10px;
+  }
+}
 
 
 /*********************installation**************************/
@@ -1531,8 +1550,197 @@ body {
   margin-bottom: 40px;
 }
 
-.brand-wrap{
+.brand-wrap,.product__wrap{
   margin-bottom: 130px;
+}
+/**product img**/
+.product-image__wrap{
+  .question-form__submit{
+	position: absolute;
+	bottom: 5px;
+  }
+  .product-image{
+	height: 320px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	img{
+	  object-fit: scale-down;
+	  width: 90%;
+	  height: 100%;
+	  display: block;
+	}
+  }
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-slider{
+  width: 100%;
+  overflow: hidden;
+  &__item, &__link{
+	height: 80px;
+	width: 100px;
+	overflow: hidden;
+	display: block;
+	transition: all .3s;
+	&:hover img{
+	  transform: scale(1.2);
+	  transition: all .3s;
+	}
+	img{
+	  object-fit: cover;
+	  display: block;
+	  width: 100%;
+	  height: 100%;
+	}
+  }
+  &__wrap{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	.slider-menu__panel-wrap{
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  width: 120px;
+	  background: #fff;
+	  background: linear-gradient(to right, rgba(255,255,255,.85), rgba(255,255,255,1));
+	  height: 95px;
+	  /* transform: translateY(-25%); */
+	  margin: 0;
+	  .slider-menu__panel{
+		.round-rarrow, .round-larrow{
+		  margin-left: 15px;
+		}
+	  }
+	}
+  }
+}
+
+.product{
+  &__name{
+	font: 35px/40px "roboto-bold", sans-serif;
+	color: $textColorDark;
+	margin-bottom: 70px;
+	margin-top: 42px;
+  }
+  &__article{
+	p{
+	  font: 16px "roboto-regular", sans-serif;
+	  color: $textColorDark;
+	  margin-bottom: 20px;
+	  &:last-child{
+		margin-bottom: 0;
+	  }
+	}
+  }
+}
+/***********************documentation***********************************/
+.documentation{
+  background-color: #f9fbfd;
+  h3{
+	font-size: 25px;
+	font-family: "roboto-bold", sans-serif;
+	color: $textColorDark;
+	margin-bottom: 30px;
+  }
+  &-table{
+	td{
+	  padding-bottom: 20px;
+	}
+	&__name-head{
+	  font: 14px "roboto-regular", sans-serif;
+	}
+  }
+  .documentation-table__name-head,.documentation-table__size-head{
+	font-size: 14px;
+	font-family: "roboto-regular", sans-serif;
+	color: #92aab7;
+  }
+  .documentation-table__size-head{
+	text-align: right;
+  }
+  .documentation-table__size-head{
+	color: #ff9579;
+  }
+  .documentation-table__name, .documentation-table__size{
+	font: 16px "roboto-bold", sans-serif;
+	color: $textColorDark;
+  }
+  .documentation-table__name{
+	width: 240px;
+  }
+  .documentation-table__size{
+	color: #f2552c;
+	width: 150px;
+	text-align: right;
+  }
+}
+
+.documentation{
+  padding-top: 70px;
+  padding-bottom: 75px;
+  &-list{
+	display: flex;
+	list-style-type: none;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+  }
+  &-item{
+	width: 50%;
+  }
+  &-item__link{
+	display: flex;
+	justify-content: space-between;
+	font: 14px "roboto-regular", sans-serif;
+	color: $textColorDark;
+	margin-bottom: 30px;
+	img{
+	  width: 27px;
+	  height: 27px;
+	  margin-right: 20px;
+	  margin-left: 45px;
+	}
+  }
+}
+.documentation-page{
+  background-color: #fff;
+  .slick-slide{
+	width: 380px !important;
+	height: auto !important;
+  }
+  .brands__list .brands__item{
+	border: none;
+	padding: 0;
+	height: auto;
+  }
+  .brands__list .brand__img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+  }
+  .brands__list .brand__img{
+	margin: 0;
+	height: auto;
+	img{
+	  height: 280px;
+	}
+  }
+  .brand{
+	display: block;
+	width: 100%;
+	height: 100%;
+  }
+  .doc__name{
+	font-size: 14px;
+	font-family: "roboto-regular", sans-serif;
+	color: $textColorDark;
+	margin-top: 15px;
+  }
 }
 /******************footer**********************/
 .footer{
@@ -1677,7 +1885,34 @@ body {
   padding-left: 30px;
   padding-right: 60px;
 }
-
+.question-form__inputs-wrap--large{
+  position: relative;
+  justify-content: center;
+  .question-form__inputs-wrap--left {
+	margin-right: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	input:last-child{
+	  margin-bottom: 0;
+	}
+  }
+  .question-form__submit{
+	position: absolute;
+	bottom: 0;
+	width: 350px ;
+  }
+  input{
+	width: 350px;
+	margin-bottom: 18px;
+  }
+  textarea{
+	height: 115px;
+	width: 350px;
+	padding-top: 15px;
+	overflow: hidden;
+  }
+}
 .button-red{
   display: flex;
   justify-content: center;
@@ -1714,7 +1949,7 @@ body {
 }
 .redFill{
   &:hover{
-	animation: redFill .3s forwards;
+	animation: redFill .8s forwards;
   }
 }
 .button-red-arrow{
@@ -2011,5 +2246,74 @@ body {
   border: 1px solid #c5c5c5;
   background: #c5c5c5;
 }
-
+.round-rarrow:hover{
+  background-image: url("../img/icons/right-red--arrow.png");
+}
+.popup-wrapper{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  display: none;
+  z-index: 9999999;
+}
+.popup{
+  display: none;
+}
+.popup-submit{
+  .question-form{
+	position: relative;
+  }
+  .question-form__close{
+	position: absolute;
+	background-image: url(../img/icons/close-icon.png);
+	height: 22px;
+	width: 22px;
+	top: -30px;
+	right: 0px;
+  }
+}
+.popup-submit-accept {
+  height: 240px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  display: none;
+  .question-form__wrap{
+	padding: 50px 200px;
+	background-color: #fff;
+	box-shadow: 5px 5px 10px #ccc;
+	border-radius: 10px;
+	position: relative;
+	h2{
+	  text-align: center;
+	}
+  }
+  .question-form__close{
+	position: absolute;
+	background-image: url("../img/icons/close-icon.png");
+	height: 22px;
+	width: 22px;
+	top: 15px;
+	right: 15px;
+  }
+  img{
+	display: block;
+	margin: 0 auto;
+  }
+}
 @import "media"; // Always at the end

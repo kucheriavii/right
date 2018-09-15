@@ -68,6 +68,10 @@
 	  border-radius: 14px;
 	}
   }
+  .product-image__wrap{
+	width: 350px;
+	min-height: 400px;
+  }
 }
 
 // ≥992px
@@ -224,6 +228,33 @@
   .catalog-filter__text{
 	margin-bottom: 50px;
   }
+  .product-image__wrap{
+	margin: 0 auto;
+  }
+  .product-image__wrap .question-form__submit{
+	position: static;
+	margin-top: 30px;
+  }
+  .brands-page .slick-slide {
+	width: 240px !important;
+	margin-right: 15px;
+  }
+  .question-form__inputs-wrap--large .question-form__inputs-wrap--left, .question-form__inputs-wrap--large .question-form__inputs-wrap--right{
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+  }
+  .question-form__inputs-wrap--large .question-form__inputs-wrap--right{
+	margin-top: 30px;
+	margin-bottom: 40px;
+  }
+  .question-form__inputs-wrap--large .question-form__submit{
+	position: relative;
+  }
   .footer-menu{
 	display: none;
   }
@@ -300,6 +331,7 @@
 	  width: 45%;
 	}
   }
+
   .footer {
 	height: auto;
 	/* margin-top: -170px; */
@@ -563,6 +595,12 @@
   }
   .views-table .views-table__sizes, .views-table .views-table__height, .views-table .views-table__width, .views-table .views-table__buttons{
 	text-align: center;
+  }
+  .documentation-item{
+	width: 100%;
+  }
+  .documentation-item__link img{
+	margin-left: 0;
   }
 }
 
