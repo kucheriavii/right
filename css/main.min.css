@@ -4934,6 +4934,7 @@ body {
 .product-slider__item, .product-slider__link {
   height: 80px;
   width: 100px;
+  max-width: 100px;
   overflow: hidden;
   display: block;
   -webkit-transition: all .3s;
@@ -6187,7 +6188,7 @@ body {
     margin: 0 auto;
   }
   .product-image__wrap .question-form__submit {
-    position: static;
+    position: relative;
     margin-top: 30px;
   }
   .brands-page .slick-slide {
@@ -6613,6 +6614,9 @@ body {
   }
   .documentation-item__link img {
     margin-left: 0;
+  }
+  .product-image__wrap {
+    width: 300px;
   }
 }
 

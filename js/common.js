@@ -53,6 +53,13 @@ function slidersProduct(){
         e.preventDefault();
         productSlider.slick('slickNext');
     });
+
+    var productItem = ".product-slider__item";
+    var imageSrc = $('.product-image img')
+    $(document).on('mouseup', productItem, function(e){
+        var src = $(this).find('img').attr('src');
+        imageSrc.attr('src', src);
+    })
 }
 
 function mainPageSliders(){

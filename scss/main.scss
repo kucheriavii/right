@@ -1583,6 +1583,7 @@ body {
   &__item, &__link{
 	height: 80px;
 	width: 100px;
+	max-width: 100px;
 	overflow: hidden;
 	display: block;
 	transition: all .3s;
