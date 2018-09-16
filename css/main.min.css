@@ -5137,6 +5137,39 @@ body {
   margin-top: 15px;
 }
 
+/******jobs type*********/
+.jobs__wrap .installation-item {
+  min-width: 220px;
+}
+
+.jobs__wrap .seo-info {
+  margin-top: 50px;
+}
+
+.jobs__wrap .brands-page .slick-slide {
+  width: 190px !important;
+  margin-right: 0;
+}
+
+.jobs__wrap .brand__description {
+  color: #86abc4;
+  font: 14px "roboto-regular", sans-serif;
+  line-height: 20px;
+  line-height: 18px;
+  display: block;
+  padding-bottom: 15px;
+  overflow: hidden;
+  height: 52px;
+}
+
+.jobs__wrap h5.brand__name {
+  padding: 0;
+}
+
+.jobs__wrap .brands__list .brands__item {
+  overflow: hidden;
+}
+
 /******************footer**********************/
 .footer {
   height: 170px;
