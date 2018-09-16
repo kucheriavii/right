@@ -255,6 +255,12 @@
   .question-form__inputs-wrap--large .question-form__submit{
 	position: relative;
   }
+  .jobs__wrap .installation-item__image {
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: center;
+  }
   .footer-menu{
 	display: none;
   }

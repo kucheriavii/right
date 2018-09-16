@@ -1749,6 +1749,25 @@ body {
   .installation-item{
 	min-width: 220px;
   }
+  .installation-item__wrapper .round-rarrow,.installation-item__wrapper .round-larrow {
+	position: absolute;
+	bottom: 10px;
+  }
+  .installation-item__image{
+	justify-content: flex-start;
+  }
+  .installation-item__text {
+	text-align: left;
+	font: 20px "roboto-medium", sans-serif;
+	min-height: 75px;
+	overflow: hidden;
+  }
+  .installation-item{
+	min-height: 300px;
+  }
+  .installation-item__text{
+	height: 100px;
+  }
   .seo-info{
 	margin-top: 50px;
   }
@@ -1771,6 +1790,54 @@ body {
   }
   .brands__list .brands__item{
 	overflow: hidden;
+  }
+}
+.job-article__wrap{
+  .toolbar-head{
+	font-size: 25px;
+	font-family: "roboto-bold", sans-serif;
+	color: $textColorDark;
+	line-height: 33px;
+  }
+  .column-news{
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+  }
+  .column-news__img-wrap{
+	width: 100%;
+	height: 160px;
+	overflow: hidden;
+  }
+  .column-news__item{
+	.column-news__link{
+	  text-decoration: none;
+	}
+	img{
+	  width: 100%;
+	  display: block;
+	  object-fit: cover;
+	  height: 100%;
+	  transition: all 0.5s;
+	  &:hover{
+		transform: scale(1.2);
+		transition: all 0.5s;
+	  }
+	}
+	.column-news__head{
+	  font: 14px "roboto-regular", sans-serif;
+	  color: #92aab7;
+	  margin-top: 6px;
+	  margin-bottom: 10px;
+	}
+  }
+}
+.job-article__wrap-toolbar{
+  .show-more{
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 60px;
   }
 }
 /******************footer**********************/
