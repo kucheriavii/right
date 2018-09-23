@@ -5673,6 +5673,277 @@ body {
   margin-top: 40px;
 }
 
+/*******************news**********************/
+h1.news-header {
+  margin-bottom: 0;
+}
+
+.news-thumbnail__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news-thumbnail__img-wrap {
+  overflow: hidden;
+  height: 430px;
+  position: relative;
+}
+
+.news-thumbnail__img-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news-thumbnail__info {
+  position: absolute;
+  padding: 30px 50px 25px 30px;
+  background-color: #fff;
+  bottom: 35px;
+  right: 0;
+  width: 60%;
+  color: #084464;
+}
+
+.news-thumbnail__article-name {
+  font: 25px/35px "roboto-bold", sans-serif;
+}
+
+.news-thumbnail__article-date {
+  font-size: 14px;
+}
+
+.news-thumbnail__medium {
+  width: 54%;
+  margin-top: 30px;
+}
+
+.news-thumbnail__medium .news-thumbnail__link {
+  display: block;
+  text-decoration: none;
+}
+
+.news-thumbnail__medium .news-thumbnail__article-date {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.news-thumbnail__medium .news-thumbnail__img-wrap {
+  height: 220px;
+  overflow: hidden;
+}
+
+.news-thumbnail__medium .news-thumbnail__article-name {
+  font: 20px "roboto-bold", sans-serif;
+  color: #084464;
+  margin-top: 30px;
+}
+
+.news-thumbnail__medium .news-thumbnail__article-date {
+  font: 14px "roboto-regular", sans-serif;
+  color: #084464;
+}
+
+.news-thumbnail__medium .news-thumbnail__text-wrap {
+  color: #a4b1bb;
+  font: 14px "roboto-regular", sans-serif;
+  height: 115px;
+  overflow: hidden;
+}
+
+.news-thumbnail__list {
+  width: 45%;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.news-thumbnail__list .column-news__info .column-news__head {
+  font: 18px "roboto-bold", sans-serif !important;
+  max-height: 50px !important;
+}
+
+.news-thumbnail__list .job-article__wrap .column-news--short {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.news-thumbnail__list .column-news__item:last-child {
+  margin-bottom: 0;
+}
+
+.news-thumbnail__list .column-news--short {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.news-thumbnail__item {
+  width: 30%;
+  width: -webkit-calc(33.3% - 20px);
+  width: calc(33.3% - 20px);
+}
+
+.news-thumbnail__item .news-thumbnail__img-wrap {
+  height: 170px;
+  overflow: hidden;
+}
+
+.news-thumbnail__wrap-line {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.news-thumbnail__wrap-line .news-thumbnail__item {
+  margin-left: 30px;
+}
+
+.news-thumbnail__wrap-line .news-thumbnail__item:first-child {
+  margin-left: 0;
+}
+
+.news-thumbnail__wrap-line .news-thumbnail__item:nth-child(4n) {
+  margin-left: 0;
+}
+
+.news-thumbnail__wrap-line .news-thumbnail__item .news-thumbnail__article-name {
+  font: 18px "roboto-bold", sans-serif;
+  color: #084464;
+  margin-top: 15px;
+  display: block;
+}
+
+.news-thumbnail__wrap-line .news-thumbnail__item .news-thumbnail__article-date {
+  color: #084464;
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.news-thumbnail__wrap-line .news-thumbnail__item .news-thumbnail__text-wrap {
+  font: 14px "roboto-regular", sans-serif;
+  color: #a4b1bb;
+  height: 60px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.pagenav__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px;
+}
+
+.pagenav__wrap .pagenav__prew {
+  display: block;
+  background-image: url("../img/icons/arrow-left-accent.png");
+  width: 16px;
+  height: 10px;
+  margin-right: 20px;
+}
+
+.pagenav__wrap .pagenav__prew:hover {
+  color: #084464;
+  text-decoration: none;
+  background-image: url("../img/icons/arrow-left.png");
+}
+
+.pagenav__wrap .pagenav__next {
+  display: block;
+  background-image: url("../img/icons/arrow-right-accent.png");
+  width: 16px;
+  height: 10px;
+  margin-left: 20px;
+}
+
+.pagenav__wrap .pagenav__next:hover {
+  color: #084464;
+  text-decoration: none;
+  background-image: url("../img/icons/arrow-right.png");
+}
+
+.pagenav__wrap .pagenav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagenav__wrap .pagenav__item .pagemav__link {
+  font: 14px "roboto-regular", sans-serif;
+  color: #a4b1bb;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 25px;
+  min-height: 25px;
+}
+
+.pagenav__wrap .pagenav__item .pagemav__link:hover {
+  color: #084464;
+  text-decoration: none;
+}
+
+.pagenav__wrap .pagenav__item .pagemav__link.active {
+  background-color: #e6380b;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  color: #fff;
+}
+
 /******************footer**********************/
 .footer {
   height: 170px;
