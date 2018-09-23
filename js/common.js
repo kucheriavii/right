@@ -13,7 +13,43 @@ $(function() {
     popup();
 
 
+    $('.ol-list--red-dots li').each(function(index){
+        $(this).prepend('<span class="ol-list--red-num">'+(index+1)+'</span>')
+    })
+
+
+    var mainSlider = $('.article-slider__main-slider-list').slick();
+    var panelSlider = $('.article-slider__main-slider-list--small').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        asNavFor: '.article-slider__main-slider-list',
+        focusOnSelect: true,
+        centerMode: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 545,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
+    });
+    $('.article-slider__main-slider-panel .header__slider-button-left').on('click', function(e){
+        e.preventDefault();
+        panelSlider.slick('slickPrev');
+    });
+    $('.article-slider__main-slider-panel .header__slider-button-right').on('click', function(e){
+        e.preventDefault();
+        panelSlider.slick('slickNext');
+    });
 });
+
 function popup(){
     var close = '.question-form__close';
     $(document).on('click', close, function(e){
@@ -290,7 +326,6 @@ function filterTable(){
     })
 }
 
-
 var userMethods = {
     isMobile: function (size) {
         if ($(window).width() < size) {
@@ -302,3 +337,8 @@ var userMethods = {
         }
     }
 }
+
+
+
+
+

@@ -532,6 +532,10 @@
 	  background-size: contain;
 	}
   }
+  .job-article__wrap .column-news--short .column-news__item a .column-news__img-wrap{
+	max-width: 90px;
+	max-height: 90px;
+  }
 }
 
 // ≥576px
@@ -580,6 +584,41 @@
   .news--catalog__img{
 	width: 100%;
   }
+  .article .article__header-info .article__name {
+	font: 20px/25px "roboto-bold", sans-serif;
+	color: #084464;
+  }
+  .article .article__main-text .article__text-wrap h5.list-name{
+	margin-left: 0;
+  }
+  .article .article__main-text .article__text-wrap .list--red-dots, .article .article__main-text .article__text-wrap .ol-list--red-dots {
+	margin-bottom: 50px;
+	margin-left: 0;
+  }
+  .article .article__main-text .article-attention p:first-child:before, .article .article__main-text .article-quote p:first-child:before {
+	content: '';
+	display: block;
+	float: left;
+	margin-right: 20px;
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/icons/attention-icon.png);
+	margin-left: -70px;
+	margin-top: 0;
+	background-size: contain;
+  }
+  .article .article__main-text .article-attention p, .article .article__main-text .article-quote p{
+	font-size: 16px;
+  }
+  .article .article__main-text .article-attention, .article .article__main-text .article-quote{
+	margin-left: 50px;
+  }
+  .article .article__main-text .article__footer .article__writer-info-wrap {
+	flex-wrap: wrap;
+  }
+  .article .article__main-text .article__footer {
+	flex-wrap: wrap;
+  }
   .category-item__img-link {
 	width: 33%;
 	width: 215px;
@@ -588,6 +627,38 @@
 	width: 90%;
 	overflow: hidden;
 	margin: 0 auto;
+  }
+  .left_pic--big, .right_pic--big{
+	width: auto;
+  }
+  .article .article__main-text .article__footer .article__social{
+	width: 100%;
+	justify-content: center;
+	margin-top: 10px;
+  }
+  .article .article__main-text{
+	margin: 0;
+	padding: 0;
+  }
+  .article .article__header-info {
+	position: absolute;
+	right: 0;
+	width: 95%;
+	bottom: 0;
+	padding: 25px 80px 30px 30px;
+	background-color: #fff;
+  }
+  .article .article__header-info {
+	position: absolute;
+	right: 0;
+	width: 95%;
+	bottom: 0;
+	padding: 25px 15px;
+	background-color: #fff;
+  }
+  .article .article__main-text .article__footer .article__writer-info-wrap{
+	width: 100%;
+	justify-content: center;
   }
   .category-item-big-wrap--vertical .category-item-big{
 	width: 100%;
@@ -611,9 +682,12 @@
   .product-image__wrap{
 	width: 300px;
   }
+
 }
 
+@media screen and (max-width: 425px){
 
+}
 /*==========  Mobile First  ==========*/
 
 // ≤576px
