@@ -2254,6 +2254,11 @@ h1.news-header{
 	height: 170px;
 	overflow: hidden;
   }
+  .news-thumbnail__link{
+	display: block;
+	text-decoration: none;
+	color: #084464;
+  }
 }
 .news-thumbnail__wrap-line{
   display: flex;
@@ -2343,6 +2348,97 @@ h1.news-header{
 	  }
 	}
   }
+}
+.contacts__wrap{
+  position: relative;
+  padding-left: 30px;
+  h2{
+	font: 25px "roboto-bold", sans-serif;
+	color: #084464;
+	margin-bottom: 25px;
+	margin-top: 40px;
+  }
+  .contacts-work__days{
+	font: 16px "roboto-regular", sans-serif;
+	color: #084464;
+	margin-right: 40px;
+	padding-left: 60px;
+  }
+  .contacts-work__time{
+	font: 16px "roboto-regular", sans-serif;
+	color: $accent;
+  }
+  .contacts__header-workdays{
+	&:before{
+	  content: "";
+	  display: inline-block;
+	  background-image: url("../img/icons/time-icon.png");
+	  height: 18px;
+	  width: 18px;
+	  margin-right: 10px;
+	  background-repeat: no-repeat;
+	  background-size: contain;
+	}
+  }
+  .contacts__header-phones{
+	&:before{
+	  content: "";
+	  display: inline-block;
+	  background-image: url("../img/icons/phone-contacts-icon.png");
+	  height: 18px;
+	  width: 18px;
+	  margin-right: 10px;
+	  background-repeat: no-repeat;
+	  background-size: contain;
+	}
+  }
+  .contacts__header-address{
+	&:before{
+	  content: "";
+	  display: inline-block;
+	  background-image: url("../img/icons/address-contacts-icon.png");
+	  height: 18px;
+	  width: 18px;
+	  margin-right: 10px;
+	  background-repeat: no-repeat;
+	  background-size: contain;
+	  background-position: center;
+	}
+  }
+  .contacts__phone{
+	font: 16px "roboto-regular", sans-serif;
+	color: #084464;
+	padding-left: 60px;
+	display: block;
+	&:hover{
+	  text-decoration: none;
+	}
+  }
+  .cantacts__address{
+	padding-left: 60px;
+	font: 16px "roboto-regular", sans-serif;
+	color: #084464;
+	display: block;
+  }
+  .contacts__block:first-child{
+	margin-top: 80px;
+  }
+}
+#map{
+  width: 100%;
+  height: 100%;
+  display: block;
+  min-width: 600px;
+  min-height: 400px;
+  position: absolute !important;
+  right: 0;
+  width: 60%;
+  top: 0;
+  height: 600px;
+}
+.map-wrap{
+  overflow: hidden;
+  padding-bottom: 150px;
 }
 /******************footer**********************/
 .footer{
