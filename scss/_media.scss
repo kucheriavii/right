@@ -5,6 +5,20 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+  .nav-bar__search-wrap-ins {
+	position: relative;
+	margin-left: 16px;
+	position: absolute;
+	top: -10px;
+	left: -20px;
+	margin-left: 16px;
+	right: 45%;
+	left: auto;
+	transform: translateX(50%);
+	#nav-bar__search-ins{
+	  width: 165px;
+	}
+  }
 	.main-menu__item{
 	  padding: 0 10px;
 	  .main-menu__link{
@@ -76,6 +90,23 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
+  .nav-bar__search-wrap-ins {
+	position: relative;
+	margin-left: 16px;
+	position: absolute;
+	top: -10px;
+	left: -20px;
+	margin-left: 16px;
+	right: 50%;
+	left: auto;
+	-webkit-transform: translateX(50%);
+	-ms-transform: translateX(50%);
+	transform: translateX(50%);
+	width: 100%;
+	#nav-bar__search-ins{
+	  width: 100%;
+	}
+  }
   .header--blue{
 	height: 250px;
 	.header__top-wrapper{
@@ -156,6 +187,17 @@
 	width: 100%;
 	margin-bottom: 25px;
   }
+  /**10/10/2018**/
+  .input-wrap{
+	width: 100%;
+	.input__border-radius.error-input{
+	  margin-bottom: 0;
+	}
+	.error-output{
+	  margin-bottom: 25px;
+	}
+  }
+  /***************/
   .about-company .leftOfContainer{
 	position: relative;
   }
@@ -282,7 +324,26 @@
 	margin: 0;
 	padding: 0;
   }
-
+  .contacts__wrap .contacts__block{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+  }
+  .contacts__wrap .contacts-work__days,.contacts__wrap .contacts__phone,.contacts__wrap .cantacts__address{
+	margin: 0;
+	padding: 0;
+	display: block;
+	text-align: center;
+  }
+  .contacts__wrap .contacts__phone{
+	margin-bottom: 30px;
+  }
+  .contacts__wrap .cantacts__address{
+	line-height: 2em;
+  }
+  .contacts__wrap .contacts__block:first-child{
+	margin-top: 0;
+  }
   .footer-menu{
 	display: none;
   }
@@ -307,6 +368,9 @@
 @include media-breakpoint-down(sm) {
   .header--blue{
 	height: 150px;
+  }
+  .nav-bar__search-wrap-ins{
+	width: 50%;
   }
   .footer__social-networks{
 	width: 100%;
@@ -443,6 +507,19 @@
 	width: 100%;
 	line-height: 70px;
   }
+  /*10/10/2018*/
+  .nav-bar__search-wrap-ins {
+	position: relative;
+	margin-left: 16px;
+	position: absolute;
+	top: -10px;
+	left: -20px;
+	margin-left: 16px;
+	right: 50%;
+	left: auto;
+	transform: translateX(50%);
+  }
+  /**********************/
   .callback-form .callback-form__text, .callback-form .question-form__text, .question-form .callback-form__text, .question-form .question-form__text{
 	width: 100%;
   }
@@ -687,6 +764,9 @@
 	margin: 0;
 	padding: 0;
   }
+  .map-wrap {
+	zoom: 0.8;
+  }
   .article .article__header-info {
 	position: absolute;
 	right: 0;
@@ -735,11 +815,29 @@
   .page-name{
 	font-size: 36px;
   }
+  .contacts__wrap{
+	padding-left: 0;
+  }
+  .map-wrap{
+	margin-right: 0;
+  }
 
 }
 
 @media screen and (max-width: 425px){
-
+  /*10/10/2018*/
+  .nav-bar__search-wrap-ins {
+	position: relative;
+	margin-left: 16px;
+	position: absolute;
+	top: -10px;
+	left: -20px;
+	margin-left: 16px;
+	right: 45%;
+	left: auto;
+	transform: translateX(50%);
+  }
+  /**********************/
 }
 /*==========  Mobile First  ==========*/
 

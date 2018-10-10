@@ -11,13 +11,39 @@ $(function() {
     filterTable();/*скрывает лишнии строки в таблице описания товара и делает гармошку*/
     slidersProduct();
     popup();
+    articleSlider(); //слайдер в статьи
+    orderList() //нумирация елементов в списке .ol-list--red-dots li
 
+    $('.contacts .contacts__search').on('click', function(e){
+
+        $('<div class="nav-bar__search-wrap-ins"><input type="text" id="nav-bar__search-ins"><button class="nav-bar__search"></button></div>').insertBefore('.header__top-wrapper .contacts .contacts__phone');
+        $(this).css('display', 'none')
+    })
+
+    $('.header__top-find').on('click', function(e){
+        e.preventDefault();
+        if (!$(this).hasClass('searchActive')){
+            $('<div class="nav-bar__search-wrap-ins-fix"><input type="text" id="nav-bar__search-ins-fix"><button class="nav-bar__search"></button></div>').insertBefore('.header__top-wrapper-fixed .header__top-find');
+            $(this).addClass('searchActive').find('img').attr('src','img/icons/close-icon.png')
+        } else {
+            $('.header__top-wrapper-fixed .nav-bar__search-wrap-ins-fix').remove();
+            $(this).removeClass('searchActive').find('img').attr('src','img/icons/search-blue-icon.png');
+        }
+
+    });
+
+    $(document).on('click','.nav-bar__search-wrap-ins .nav-bar__search', function(){
+       // $('.nav-bar__search-wrap-ins').remove();
+    })
+
+});
+function orderList() {
 
     $('.ol-list--red-dots li').each(function(index){
         $(this).prepend('<span class="ol-list--red-num">'+(index+1)+'</span>')
     })
-
-
+}
+function articleSlider() {
     var mainSlider = $('.article-slider__main-slider-list').slick();
     var panelSlider = $('.article-slider__main-slider-list--small').slick({
         slidesToShow: 6,
@@ -48,8 +74,7 @@ $(function() {
         e.preventDefault();
         panelSlider.slick('slickNext');
     });
-});
-
+}
 function popup(){
     var close = '.question-form__close';
     $(document).on('click', close, function(e){
@@ -223,6 +248,15 @@ var sandwich = function(){ //Сендвич анимация на кнопку �
             $('.main-menu').removeClass('active');
         }
     });
+
+    if(userMethods.isMobile){
+        $('.main-menu').addClass('mobile-menu-link');
+    }
+    $('.mobile-menu-link .main-menu__item').on('click', function(){
+        $('.sandwich').trigger('click')
+    })
+
+
 };
 var bigMenuAccordeon = function(){
     var button = ".big-menu__subitem .arrow";

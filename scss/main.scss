@@ -53,6 +53,30 @@
 	border-left: 2px solid $accent;
   }
 }
+/*****анимации 10/10/18****/
+@keyframes horizontalMove {
+  from {
+	background-position: 50% 50%;
+  }
+  50%{
+	background-position: 70% 50%;
+  }
+  to {
+	background-position: 40% 50%;
+  }
+}
+@keyframes verticalMove {
+  from {
+	background-position: 50% 50%;
+  }
+  50%{
+	background-position: 50% 70%;
+  }
+  to {
+	background-position: 50% 40%;
+  }
+}
+/*****анимации 10/10/18****/
 
 ::placeholder {
 	color: #666;
@@ -419,8 +443,8 @@ body {
   height: 260px;
   &__item{
 	padding-top: 16px;
-	border-left: 1px solid $textColor;
-	border-right: 1px solid $textColor;
+	//border-left: 1px solid $textColor;
+	//border-right: 1px solid $textColor;
 	border-bottom: 1px solid $textColor;
 	width: 250px;
 	display: block;
@@ -501,6 +525,10 @@ body {
 	position: absolute;
 	right: 0;
 	bottom: 0;
+	/*10/10/2018*/
+	&.active{
+	  left: 0;
+	}
   }
   &__phone{
 	font: 18px "roboto-medium", sans-serif;
@@ -680,6 +708,9 @@ body {
 	  height: 150px;
 	  object-fit: contain;
 	  width: 100%;
+	}
+	.brands__item-non-bordered{
+	  border: none;
 	}
   }
 }
@@ -1557,6 +1588,85 @@ body {
 	}
   }
 }
+/*10/10/18******/
+.nav-bar__search-wrap-ins{
+  position: relative;
+  margin-left: 16px;
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  #nav-bar__search-ins{
+	display: block;
+	width: 100%;
+	border-radius: 16px;
+	height: 33px;
+	padding-left: 50px;
+	width: 212px;
+	padding-right: 10px;
+	border: 1px solid #bdd1dc;
+  }
+  margin-left: 16px;
+  .nav-bar__search{
+	position: absolute;
+	top: 50%;
+	left: 12px;
+	background-image: url("../img/icons/search-blue-icon.png");
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-size: contain;
+	width: 19px;
+	height: 19px;
+	transform: translateY(-50%);
+	outline: 0;
+	cursor: pointer;
+  }
+}
+.nav-bar__search-wrap-ins-fix{
+  margin-left: 16px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0px;
+  height: 100%;
+  margin-left: 16px;
+  width: 100%;
+  background: #fff;
+  padding-left: 45px;
+  #nav-bar__search-ins-fix{
+	display: block;
+	width: 100%;
+	-webkit-border-radius: 16px;
+	border-radius: 16px;
+	height: 33px;
+	padding-left: 50px;
+	width: 80%;
+	padding-right: 10px;
+	border: 1px solid #bdd1dc;
+	top: 50%;
+	position: absolute;
+	transform: translateY(-50%);
+  }
+  margin-left: 16px;
+  .nav-bar__search{
+	position: absolute;
+	top: 50%;
+	left: 57px;
+	background-image: url("../img/icons/search-blue-icon.png");
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-size: contain;
+	width: 19px;
+	height: 19px;
+	transform: translateY(-50%);
+	outline: 0;
+	cursor: pointer;
+  }
+}
+/***************************/
 .nav-bar__temperature-wrap, .nav-bar__pressure-wrap{
   display: flex;
   justify-content: space-between;
@@ -2538,17 +2648,47 @@ h1.news-header{
   height: 50px;
   -webkit-border-radius: 50%;
   border-radius: 25px;
-  border: solid 2px $gray;
+  border: solid 2px #bdd1dc;
   padding-left: 30px;
   padding-right: 30px;
-  color: $gray;
+  color: #bdd1dc;
   font: 14px "roboto-medium", sans-serif;
   &::placeholder{
 	color: $gray;
 	font: 14px "roboto-medium", sans-serif;
   }
 }
-
+/***inputs 10/10/2018***/
+.input__border-radius{
+  &:hover{
+	color: #92aab7;
+	border-color: #92aab7;
+	cursor: pointer;
+  }
+  &.correct-input{
+	color: #084464;
+	border-color: #084464;
+  }
+  &.focus-input, &:focus{
+	color: #084464;
+	border-color: $accent;
+  }
+}
+button.input__border-radius{
+  &:hover, &:active{
+	color: #fff;
+  }
+}
+/******************************/
+.error-output{
+  display: block;
+  width: 250px;
+  padding: 10px 10px 0;
+  max-height: 46px;
+  overflow: hidden;
+  color: $accent;
+  font: 14px "roboto-regular", sans-serif;
+}
 .callback-form__submit, .button-red, .question-form__submit{
   display: block;
   background-color: $accent;
@@ -2576,6 +2716,19 @@ h1.news-header{
   }
   .arrow-down{
 	background-image: url("../img/icons/arrow-down.png");
+  }
+  /************кнопки анимации 10/10/18**/
+  &:hover .arrow-right{
+	transition: all;
+	animation: horizontalMove .8s forwards;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+  }
+  &:hover .arrow-down{
+	transition: all;
+	animation: verticalMove .8s forwards;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
   }
 }
 .question-form__submit{

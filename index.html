@@ -262,9 +262,15 @@
 							<h2 class="callback-form__text">Нужна более подробная информация?
 								Заполните заявку и мы вам перезвоним!</h2>
 							<div class="callback-form__inputs-wrap">
-								<input type="text" name="user_name" class="input__border-radius" placeholder="Имя">
-								<input type="text" name="user_phone" class="input__border-radius" placeholder="Телефон">
-								<button class="callback-form__submit input__border-radius">Отправить <span class="arrow-right"></span></button>
+								<div class="input-wrap">
+									<input type="text" name="user_name" class="input__border-radius correct-input" placeholder="Имя">
+								</div>
+								<div class="input-wrap">
+									<input type="text" name="user_phone" class="input__border-radius focus-input" placeholder="Телефон">
+								</div>
+								<div class="input-wrap">
+									<button class="callback-form__submit input__border-radius">Отправить <span class="arrow-right"></span></button>
+								</div>
 							</div>
 						</form>
 					</div>
@@ -461,7 +467,7 @@
 					</div>
 					<div class="col-lg-8 col-12">
 						<ul class="brands__list">
-							<li class="brands__item">
+							<li class="brands__item brands__item-non-bordered">
 								<a href="" class="brand">
 									<div class="brand__img">
 										<img src="img/icons/brand-aco.png" alt="">
@@ -470,7 +476,7 @@
 									<span class="brand__description">Инженерная сантехника</span>
 								</a>
 							</li>
-							<li class="brands__item">
+							<li class="brands__item brands__item-non-bordered">
 								<a href="" class="brand">
 									<div class="brand__img">
 										<img src="img/icons/brand-buderus.png" alt="">
@@ -479,7 +485,7 @@
 									<span class="brand__description">Бош Термотехника, Германия</span>
 								</a>
 							</li>
-							<li class="brands__item">
+							<li class="brands__item brands__item-non-bordered">
 								<a href="" class="brand">
 									<div class="brand__img">
 										<img src="img/icons/brand-baxi.png" alt="">
@@ -488,7 +494,7 @@
 									<span class="brand__description">Отопление, горячее водоснабжение, Италия</span>
 								</a>
 							</li>
-							<li class="brands__item">
+							<li class="brands__item brands__item-non-bordered">
 								<a href="" class="brand">
 									<div class="brand__img">
 										<img src="img/icons/brand-prado.png" alt="">
@@ -497,7 +503,7 @@
 									<span class="brand__description">Радиаторы, Россия</span>
 								</a>
 							</li>
-							<li class="brands__item">
+							<li class="brands__item brands__item-non-bordered">
 							<a href="" class="brand">
 								<div class="brand__img">
 									<img src="img/icons/brand-valtec.png" alt="">
@@ -506,7 +512,7 @@
 								<span class="brand__description">Инженерная сантехника</span>
 							</a>
 						</li>
-							<li class="brands__item">
+							<li class="brands__item brands__item-non-bordered">
 								<a href="" class="brand">
 									<div class="brand__img">
 										<img src="img/icons/brand-valtec.png" alt="">
@@ -530,9 +536,16 @@
 							<h2 class="question-form__text">Есть вопросы?<br>
 								Наши специалисты готовы вас проконсультировать!</h2>
 							<div class="question-form__inputs-wrap">
-								<input type="text" name="user_name" class="input__border-radius" placeholder="Имя">
-								<input type="text" name="user_phone" class="input__border-radius" placeholder="Телефон">
-								<button class="question-form__submit input__border-radius">Записаться на консультацию <span class="arrow-right"></span></button>
+								<div class="input-wrap">
+									<input type="text" name="user_name" class="input__border-radius error-input" placeholder="Имя">
+									<span class="error-output">message lorem ipsum dolormessage lorem ipsum dolormessage lorem ipsum dolor</span>
+								</div>
+								<div class="input-wrap">
+									<input type="text" name="user_phone" class="input__border-radius" placeholder="Телефон">
+								</div>
+								<div class="input-wrap">
+									<button class="question-form__submit input__border-radius">Записаться на консультацию <span class="arrow-right"></span></button>
+								</div>
 							</div>
 						</form>
 					</div>
