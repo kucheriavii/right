@@ -6388,7 +6388,6 @@ button.input__border-radius:hover, button.input__border-radius:active {
   color: #fff;
 }
 
-/******************************/
 .error-output {
   display: block;
   width: 250px;
@@ -6399,6 +6398,7 @@ button.input__border-radius:hover, button.input__border-radius:active {
   font: 14px "roboto-regular", sans-serif;
 }
 
+/******************************/
 .callback-form__submit, .button-red, .question-form__submit {
   display: block;
   background-color: #e6380b;
