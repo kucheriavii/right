@@ -7232,6 +7232,11 @@ button.input__border-radius:hover, button.input__border-radius:active {
   margin-left: 30px;
 }
 
+.question-form__inputs-wrap--large input {
+  width: 350px;
+  margin-bottom: 18px !important;
+}
+
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
   .nav-bar__search-wrap-ins {
