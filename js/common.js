@@ -24,7 +24,18 @@ function pageSearch(){
 
         $('<div class="nav-bar__search-wrap-ins"><input type="text" id="nav-bar__search-ins"><button class="nav-bar__search"></button></div>').insertBefore('.header__top-wrapper .contacts .contacts__phone');
         $(this).css('display', 'none')
-    })
+    });
+
+    $(document).click(function (e) {
+        var container = $(".nav-bar__search-wrap-ins");
+        if(e.target.className !== 'contacts__search'){
+            if (e.target!=container[0]&&container.has(e.target).length === 0){
+                container.hide();
+                $('.contacts .contacts__search').css('display','block')
+            }
+        }
+    });
+
 
     $('.header__top-find').on('click', function(e){
         e.preventDefault();
@@ -224,11 +235,15 @@ function activeItems(){
 
 
     /***main menu for mobile**/
-    var menuButton = '.menu-button';
-    var mobileMenu = '.main-menu';
-    $(document).on('click', menuButton, function(e){
-        $(mobileMenu).slideToggle(500);
-    })
+
+    if(userMethods.isMobile(768)){
+        var menuButton = '.menu-button';
+        var mobileMenu = '.main-menu';
+        $(document).on('click', menuButton, function(e){
+            $(mobileMenu).slideToggle(500);
+        });
+    }
+
 
     /***catalog menu for mobile***/
     var mobileNavBar = ".mobile-show-category-nav-bar";
