@@ -6471,19 +6471,6 @@ button.input__border-radius:hover, button.input__border-radius:active {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.question-form__inputs-wrap--large .input-wrap{
-  margin-bottom: 18px;
-}
-.question-form__inputs-wrap--large .input-wrap:last-child{
-  margin-bottom: 0;
-}
-.question-form__inputs-wrap--large .input-wrap input{
-  margin-bottom: 0 !important;
-}
-.question-form__inputs-wrap--large .error-output{
-  max-height: auto;
-  width: 350px;
-}
 
 .question-form__inputs-wrap--large .question-form__inputs-wrap--left {
   margin-right: 30px;
@@ -7247,7 +7234,7 @@ button.input__border-radius:hover, button.input__border-radius:active {
 
 .question-form__inputs-wrap--large input {
   width: 350px;
-  margin-bottom: 18px;
+  margin-bottom: 18px !important;
 }
 
 /*==========  Desktop First  ==========*/
